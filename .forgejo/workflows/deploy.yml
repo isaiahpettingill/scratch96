@@ -18,7 +18,7 @@ jobs:
             apt-get install -y git ca-certificates
           fi
           git init .
-          git remote add origin https://codeberg.org/compu96/scratch96.git
+          git remote add origin https://github.com/isaiahpettingill/scratch96.git
           git fetch --depth=1 origin "$GITHUB_SHA"
           git checkout --detach "$GITHUB_SHA"
 
