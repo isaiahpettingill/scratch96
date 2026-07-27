@@ -1,0 +1,430 @@
+.asset-columns {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.asset-actions,
+.asset-toolbar,
+.asset-card-header,
+.binding-row {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.script-scope-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+.script-scope-button {
+  background: #f4f4f4;
+  border: 1px solid #c6c6c6;
+  color: #161616;
+  cursor: pointer;
+  padding: 0.45rem 0.75rem;
+}
+
+.script-scope-button.active {
+  background: #0f62fe;
+  border-color: #0f62fe;
+  color: #ffffff;
+}
+
+.upload-button {
+  background: #0f62fe;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.875rem;
+  min-height: 2rem;
+  padding: 0.45rem 0.75rem;
+}
+
+.import-sprite-label {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.import-sprite-label span {
+  color: #525252;
+  font-size: 0.875rem;
+}
+
+.import-sprite-label select {
+  background: #ffffff;
+  border: 1px solid #8d8d8d;
+  color: #161616;
+  min-height: 2rem;
+  padding: 0.35rem 2rem 0.35rem 0.5rem;
+}
+
+.asset-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.asset-card {
+  display: block;
+}
+
+.asset-card-header span {
+  color: #6f6f6f;
+  font-size: 0.75rem;
+}
+
+.tone-mixer {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tone-step-grid {
+  background: #161616;
+  color: #f4f4f4;
+  display: grid;
+  gap: 1px;
+  overflow-x: auto;
+}
+
+.tone-step {
+  align-items: center;
+  background: #262626;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 3rem minmax(8rem, 1fr) minmax(8rem, 1fr) 2rem;
+  min-width: 24rem;
+  padding: 0.5rem;
+}
+
+.tone-step-header {
+  background: #393939;
+  color: #c6c6c6;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.tone-step-index {
+  color: #78a9ff;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.tone-remove {
+  background: #525252;
+  border: 0;
+  color: #f4f4f4;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.tone-remove:hover {
+  background: #da1e28;
+}
+
+.sprite-editor {
+  display: grid;
+  gap: 1rem;
+}
+
+.sprite-detail-card {
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+}
+
+.piskel-editor-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.sprite-editor-fields {
+  display: grid;
+  gap: 1rem;
+}
+
+.piskel-web-component-host {
+  background: #2d2d2d;
+  border: 0;
+  display: block;
+  height: 100%;
+  min-height: 0;
+}
+
+.piskel-web-component-frame {
+  border: 0;
+  display: block;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+}
+
+.frame-timeline {
+  justify-content: start;
+}
+
+.collider-fields {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tilemap-editor-host {
+  display: block;
+  height: 100%;
+  min-height: 0;
+}
+
+.tilemap-editor-shell {
+  background: #262626;
+  color: #f4f4f4;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  height: 100%;
+  min-height: 0;
+}
+
+.tilemap-editor-toolbar,
+.tilemap-editor-tools,
+.tilemap-editor-layout,
+.tilemap-editor-palette-heading {
+  align-items: center;
+  display: flex;
+}
+
+.tilemap-editor-toolbar {
+  background: #393939;
+  border-bottom: 1px solid #525252;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.tilemap-editor-heading {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.tilemap-editor-heading .eyebrow {
+  margin: 0;
+}
+
+.tilemap-editor-tools {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.tilemap-editor-tools button,
+.tilemap-editor-tile {
+  background: #525252;
+  border: 1px solid transparent;
+  color: #f4f4f4;
+  cursor: pointer;
+  font: inherit;
+}
+
+.tilemap-editor-tools button {
+  min-height: 2rem;
+  padding: 0 0.75rem;
+}
+
+.tilemap-editor-tools button:hover,
+.tilemap-editor-tools button.active,
+.tilemap-editor-tile:hover,
+.tilemap-editor-tile.active {
+  border-color: #78a9ff;
+  outline: 1px solid #78a9ff;
+}
+
+.tilemap-editor-presets {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.tilemap-editor-presets button {
+  min-width: auto;
+  padding: 0 0.4rem;
+}
+
+.tilemap-editor-dimension {
+  align-items: center;
+  display: flex;
+  font-size: 0.75rem;
+  gap: 0.25rem;
+}
+
+.tilemap-editor-dimension input {
+  background: #ffffff;
+  border: 1px solid #8d8d8d;
+  color: #161616;
+  min-height: 2rem;
+  width: 4rem;
+}
+
+.tilemap-editor-tools output {
+  font-family: "IBM Plex Mono", monospace;
+  min-width: 3.5rem;
+  text-align: center;
+}
+
+.tilemap-editor-layout {
+  align-items: stretch;
+  min-height: 0;
+  min-width: 0;
+}
+
+.tilemap-editor-palette {
+  background: #303030;
+  border-right: 1px solid #525252;
+  flex: 0 0 10rem;
+  min-height: 0;
+  overflow: auto;
+  padding: 0.75rem;
+}
+
+.tilemap-editor-palette-heading {
+  font-size: 0.875rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.tilemap-editor-palette-heading span {
+  color: #a8a8a8;
+  font-size: 0.75rem;
+}
+
+.tilemap-editor-tiles {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tilemap-editor-tiles > p {
+  color: #c6c6c6;
+  font-size: 0.75rem;
+  grid-column: 1 / -1;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tilemap-editor-tile {
+  display: grid;
+  gap: 0.25rem;
+  justify-items: center;
+  padding: 0.35rem;
+}
+
+.tilemap-editor-empty-preview {
+  align-items: center;
+  background:
+    linear-gradient(45deg, #6f6f6f 25%, transparent 25%),
+    linear-gradient(-45deg, #6f6f6f 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #6f6f6f 75%),
+    linear-gradient(-45deg, transparent 75%, #6f6f6f 75%);
+  background-color: #ffffff;
+  background-position: 0 0, 0 0.5rem, 0.5rem -0.5rem, -0.5rem 0;
+  background-size: 1rem 1rem;
+  color: #161616;
+  display: grid;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.tilemap-editor-tile-preview {
+  background:
+    linear-gradient(45deg, #6f6f6f 25%, transparent 25%),
+    linear-gradient(-45deg, #6f6f6f 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #6f6f6f 75%),
+    linear-gradient(-45deg, transparent 75%, #6f6f6f 75%);
+  background-color: #ffffff;
+  background-position: 0 0, 0 0.25rem, 0.25rem -0.25rem, -0.25rem 0;
+  background-size: 0.5rem 0.5rem;
+  image-rendering: pixelated;
+  max-width: 100%;
+}
+
+.tilemap-editor-canvas-panel {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+}
+
+.tilemap-editor-help {
+  background: #303030;
+  color: #c6c6c6;
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+.tilemap-editor-viewport {
+  min-height: 0;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.tilemap-editor-stage {
+  display: inline-block;
+  line-height: 0;
+  outline: none;
+}
+
+.tilemap-editor-stage:focus-visible {
+  outline: 2px solid #78a9ff;
+  outline-offset: 0.25rem;
+}
+
+.tilemap-editor-stage canvas {
+  image-rendering: pixelated;
+}
+
+.tilemap-editor-unavailable {
+  color: #f4f4f4;
+  padding: 1rem;
+}
+
+.frame-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+}
+
+.frame-card {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+}
+
+.frame-preview {
+  align-items: center;
+  background:
+    linear-gradient(45deg, #e0e0e0 25%, transparent 25%),
+    linear-gradient(-45deg, #e0e0e0 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e0e0e0 75%),
+    linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
+  background-color: #ffffff;
+  background-position:
+    0 0,
+    0 0.25rem,
+    0.25rem -0.25rem,
+    -0.25rem 0;
+  background-size: 0.5rem 0.5rem;
+  border: 1px solid #8d8d8d;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  overflow: hidden;
+  width: 3rem;
+}
+
+.frame-preview img {
+  image-rendering: pixelated;
+  max-height: 100%;
+  max-width: 100%;
+}

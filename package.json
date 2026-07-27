@@ -1,0 +1,41 @@
+{
+  "name": "scratch96",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/prepare-ffmpeg-core.mjs",
+    "prebuild": "node scripts/prepare-ffmpeg-core.mjs",
+    "dev": "vp dev",
+    "build": "vp build",
+    "check": "vp check src index.html vite.config.ts",
+    "codegen:tcc-wasm": "node scripts/build-tcc-wasm.mjs",
+    "codegen:cproc-wasm": "node scripts/build-cproc-wasm.mjs",
+    "codegen:qbe-wasm": "node scripts/build-qbe-wasm.mjs",
+    "codegen:aseprite-wasm": "node scripts/build-aseprite-wasm.mjs",
+    "test": "vp test",
+    "typecheck": "vp check --no-fmt --no-lint src"
+  },
+  "dependencies": {
+    "@carbon/icons": "^11.82.0",
+    "@carbon/web-components": "^2.57.0",
+    "@ffmpeg/core": "^0.12.9",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "blockly": "^13.0.0",
+    "konva": "^10.3.0",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "jsdom": "^27.4.0",
+    "vite-plus": "^0.2.1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "^11.16.0",
+      "onFail": "download"
+    }
+  }
+}

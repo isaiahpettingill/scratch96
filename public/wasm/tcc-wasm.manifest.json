@@ -1,0 +1,18 @@
+{
+  "name": "tinycc-wasm",
+  "upstream": "https://github.com/TinyCC/tinycc",
+  "upstreamCommit": "a338258d309c888bde96b2d1f206299231a54ddf",
+  "artifact": "tcc-wasm.wasm",
+  "loader": "tcc-wasm.js",
+  "sha256": "2aaf9e1321c3eea6c4ec4ce393f01252ffb28e70ecddcfc32d85e17168e8bd16",
+  "loaderSha256": "ee64dc9493a1486b85507c3964a393dd42db62afec12cb59b556de9038bdde0b",
+  "target": "wasm32-emscripten",
+  "exports": [
+    "compile_program",
+    "link_assembly",
+    "allocUint8"
+  ],
+  "buildToolchain": {
+    "emcc": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.0 (afa15e0c56d1292e073c2c91bafc1d5e0cdf0dd3)"
+  }
+}

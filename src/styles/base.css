@@ -1,0 +1,125 @@
+:root {
+  background: #f4f4f4;
+  color: #161616;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+scratch96-app {
+  display: block;
+}
+
+.ide-shell {
+  background: #f4f4f4;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.top-bar {
+  align-items: center;
+  background: #161616;
+  border-bottom: 1px solid #393939;
+  color: #f4f4f4;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(12rem, auto) 1fr auto;
+  min-height: 3.5rem;
+  padding: 0 1rem;
+}
+
+.brand-block {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.product-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.project-title,
+.eyebrow,
+.panel-heading p,
+.asset-card p,
+.settings-help {
+  color: #6f6f6f;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.top-bar .project-title {
+  color: #c6c6c6;
+}
+
+.app-notice {
+  background: #edf5ff;
+  border-bottom: 1px solid #a6c8ff;
+  color: #0043ce;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  white-space: pre-wrap;
+}
+
+.app-notice[data-tone="error"] {
+  background: #fff1f1;
+  border-bottom-color: #ffb3b8;
+  color: #a2191f;
+}
+
+.main-tabs,
+.segmented-tabs,
+.top-actions {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.top-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.project-menu-button cds-menu-item {
+  background: #ffffff;
+  color: #161616;
+}
+
+.project-menu-button cds-menu[open] {
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 18%);
+  min-width: 12rem;
+  z-index: 1000;
+}
+
+.tab-button {
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: #c6c6c6;
+  cursor: pointer;
+  font: inherit;
+  min-height: 3.5rem;
+  padding: 0 1rem;
+}
+
+.tab-button.active {
+  background: #262626;
+  border-bottom-color: #0f62fe;
+  color: #ffffff;
+}
+
+.tab-button.small {
+  color: #525252;
+  min-height: 2.5rem;
+}
+
+.tab-button.small.active {
+  background: #edf5ff;
+  color: #0f62fe;
+}

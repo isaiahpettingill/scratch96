@@ -1,0 +1,20 @@
+[submodule "vendor/tinycc"]
+path = vendor/tinycc
+url = https://github.com/TinyCC/tinycc
+
+[submodule "vendor/cproc"]
+path = vendor/cproc
+url = https://github.com/michaelforney/cproc
+
+[submodule "vendor/qbe"]
+path = vendor/qbe
+url = https://github.com/ibara/qbe.git
+
+[submodule "vendor/aseprite-io"]
+path = vendor/aseprite-io
+url = https://github.com/spebern/aseprite-io.git
+
+[submodule "vendor/piskel"]
+path = vendor/piskel
+url = https://github.com/isaiahpettingill/piskel
+

@@ -1,0 +1,17 @@
+{
+  "name": "qbe-wasm",
+  "upstream": "https://github.com/ibara/qbe",
+  "upstreamCommit": "cd778b44ba11925d65ee10ff29fe22d4a45809dd",
+  "artifact": "qbe.wasm",
+  "loader": "qbe.js",
+  "sha256": "851b2c967d2446c8ca7c524c7d98dc587b192200eed03a232a2283fe46559c10",
+  "loaderSha256": "e2cdd48ea852793e082cddbd781f0d64107eebe2aa2fff8e1f98258659153a05",
+  "target": "wasm32-emscripten",
+  "exports": [
+    "compile_qbe_to_assembly",
+    "allocUint8"
+  ],
+  "buildToolchain": {
+    "emcc": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.0 (afa15e0c56d1292e073c2c91bafc1d5e0cdf0dd3)"
+  }
+}

@@ -1,0 +1,49 @@
+@media (max-width: 1100px) {
+  .top-bar,
+  .content-shell,
+  .workspace-frame,
+  .asset-columns,
+  .collider-editor-shell,
+  .pixel-editor-layout,
+  .tilemap-settings,
+  .generated-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-tabs,
+  .top-actions {
+    justify-content: flex-start;
+  }
+
+  .settings-pane {
+    max-height: none;
+    width: auto;
+  }
+
+  .mode-sidebar {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .top-bar {
+    padding: 0.75rem;
+  }
+
+  .main-tabs,
+  .top-actions,
+  .panel-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .tab-button {
+    min-height: 2.5rem;
+    text-align: left;
+  }
+
+  .stage-screen,
+  .block-placeholder {
+    min-height: 22rem;
+  }
+}

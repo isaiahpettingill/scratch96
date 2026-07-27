@@ -1,0 +1,14 @@
+[package]
+name = "scratch96-aseprite-wasm"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+aseprite-io = { path = "../../vendor/aseprite-io" }
+serde = { version = "1", features = ["derive"] }
+serde-wasm-bindgen = "0.6"
+wasm-bindgen = "=0.2.108"

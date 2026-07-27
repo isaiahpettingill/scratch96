@@ -1,0 +1,10 @@
+{
+  "name": "aseprite-import-wasm",
+  "upstream": "https://github.com/spebern/aseprite-io",
+  "upstreamCommit": "6150416149883784a7a3b302a10dcd03d188e91c",
+  "wasm": "aseprite_import_bg.wasm",
+  "js": "aseprite_import.js",
+  "wasmSha256": "8dc239d36895a53a1963e1b105ee47963f3724edfd40cc6614af7d111d434675",
+  "jsSha256": "268532642335664f6a60d78e7a27c87a66c5a13905d801bb1ad6b7ed6f455884",
+  "target": "wasm32-unknown-unknown"
+}

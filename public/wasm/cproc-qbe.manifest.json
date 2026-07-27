@@ -1,0 +1,17 @@
+{
+  "name": "cproc-qbe-wasm",
+  "upstream": "https://github.com/michaelforney/cproc",
+  "upstreamCommit": "d1c53ddf56571573a7025324c8dd5c6d547a4d1f",
+  "artifact": "cproc-qbe.wasm",
+  "loader": "cproc-qbe.js",
+  "sha256": "bee6ab731ce3ccb2cd145f917df7a77cd03f2aaff438ecff81e55a614db06046",
+  "loaderSha256": "f5aa2dbe652c6aed6218e8f1808b3ea82b8a78dddf1f5bd35a4ed5de1950b2c8",
+  "target": "wasm32-emscripten",
+  "exports": [
+    "compile_c_to_qbe",
+    "allocUint8"
+  ],
+  "buildToolchain": {
+    "emcc": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.0 (afa15e0c56d1292e073c2c91bafc1d5e0cdf0dd3)"
+  }
+}

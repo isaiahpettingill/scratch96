@@ -1,0 +1,18 @@
+{
+  "name": "risc96-embed",
+  "source": "K:/games/risc96",
+  "sourceCommit": "35ab56ed6110b79c5c2c0d4244ff6bc23b87d8da",
+  "buildCommand": "RISC96_EMSCRIPTEN_TOOLCHAIN=\"C:/Users/isaia/scoop/apps/emscripten/current/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake\" just web-embed-build",
+  "files": [
+    {
+      "path": "risc96_embed.js"
+    },
+    {
+      "path": "risc96_embed.wasm",
+      "sha256": "5243f23ccc7dec5498eaf83b7f67824a25b8090ee178afba3bb9f0fdcbdcad18"
+    },
+    {
+      "path": "risc96-web-component.js"
+    }
+  ]
+}
